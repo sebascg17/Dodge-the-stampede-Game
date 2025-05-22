@@ -5,7 +5,6 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float speed = 25.0f;
     private float xRange = 20.0f;
-    public GameObject proyectilPrefab;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,9 +27,5 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * speed * Time.deltaTime);
 
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(proyectilPrefab, transform.position, proyectilPrefab.transform.rotation);
-        }
     }
 }
