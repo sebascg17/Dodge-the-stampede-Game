@@ -1,22 +1,24 @@
 using UnityEngine;
 
-public class DestroyCollision : MonoBehaviour
+public class DestroyCollider : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+        private void OnTriggerEnter ( Collider other )
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            PlayerController player = other.GetComponent<PlayerController>();
+            if (player != null)
+            {
+                player.TakeDamage(1);
+            }
+            Destroy(gameObject); // destruye el animal al tocar al jugador
+        }
+        else if (other.CompareTag("Comida"))
+        {
+            GameManager.Instance.AddScore(10);
+            Destroy(other.gameObject); // destruye la comida
+            Destroy(gameObject); // destruye el animal
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter ( Collider other )
-    {
-        Destroy(gameObject);
-        Destroy(other.gameObject);        
-    }
 }

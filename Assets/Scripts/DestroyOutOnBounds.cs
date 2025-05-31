@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class DestroyOutOnBounds : MonoBehaviour
 {
-    private float topBound = 40;
+    private float topBound = 25;
     private float lowerBound = -15;
+    private float sideBound = 40;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,7 +20,14 @@ public class DestroyOutOnBounds : MonoBehaviour
         }
         else if (transform.position.z < lowerBound)
         {
-            Debug.Log("Game Over");
+            Destroy(gameObject);
+        }
+        else if (transform.position.x > sideBound)
+        {
+            Destroy(gameObject);
+        }
+        else if (transform.position.x < -sideBound)
+        {
             Destroy(gameObject);
         }
     }

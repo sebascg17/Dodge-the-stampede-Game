@@ -588,23 +588,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1621116600421461119, guid: 5312c0d43050ea148b5167de429432a7, type: 3}
   m_PrefabInstance: {fileID: 8162650919233976453}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1508210616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1508210614}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52f0b2168eff2244db3d21575b442026, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pelotaPrefabs:
-  - {fileID: 2178073922435996824, guid: 1d143480adadf43389395930eee2b5cf, type: 3}
-  - {fileID: 4524317531697499709, guid: a325bcb65fd94414191d0ddc2514e2dc, type: 3}
-  - {fileID: 7945815000853930370, guid: fc41e6839a5494e0cbaea5f0081c271d, type: 3}
-  - {fileID: 4524317531697499709, guid: a325bcb65fd94414191d0ddc2514e2dc, type: 3}
 --- !u!114 &1508210618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,6 +720,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1501358387}
     m_Modifications:
+    - target: {fileID: 613704249039284572, guid: ad758136baebe1e47a764303ccf4ca36, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 613704249039284572, guid: ad758136baebe1e47a764303ccf4ca36, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 613704249039284572, guid: ad758136baebe1e47a764303ccf4ca36, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 613704249039284572, guid: ad758136baebe1e47a764303ccf4ca36, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.40975475
@@ -943,9 +938,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1621116600421461119, guid: 5312c0d43050ea148b5167de429432a7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1508210616}
     - targetCorrespondingSourceObject: {fileID: 1621116600421461119, guid: 5312c0d43050ea148b5167de429432a7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1508210618}
